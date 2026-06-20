@@ -1,181 +1,114 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-slate-900">
-      <section className="max-w-6xl mx-auto px-6 py-32">
-        <p className="text-emerald-600 font-semibold uppercase tracking-wide mb-4">
-          Communications • Advocacy • Youth Development
-        </p>
-
-        <h1 className="text-5xl md:text-7xl font-bold mb-6">
+    <main className="bg-black text-white min-h-screen">
+      {/* Hero */}
+      <section className="flex min-h-screen flex-col items-center justify-center px-6 text-center">
+        <h1 className="text-6xl md:text-8xl font-bold">
           Ziphozenkosi Ndlovu
         </h1>
 
-        <h2 className="text-2xl md:text-3xl text-slate-600 mb-8">
-          Communications, Advocacy & Youth Development Professional
-        </h2>
-
-        <p className="text-lg md:text-xl text-slate-600 max-w-3xl mb-10">
-          Building healthier communities through strategic communications,
-          youth leadership, public health advocacy, and digital innovation.
+        <p className="mt-6 text-xl md:text-2xl text-gray-400">
+          National Facilitator • Youth Health Advocate • Community Leader
         </p>
 
-        <div className="flex flex-wrap gap-4">
+        <p className="max-w-2xl mt-8 text-gray-500">
+          Driving youth-led solutions for health, wellbeing, leadership,
+          and sustainable development across Zimbabwe and beyond.
+        </p>
+
+        <div className="mt-10 flex gap-4">
           <a
-            href="https://www.linkedin.com/in/ziphozenkosi-ndlovu-902ba3203/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-emerald-600 text-white px-6 py-3 rounded-lg hover:bg-emerald-700 transition"
+            href="#about"
+            className="rounded-full bg-white text-black px-6 py-3 font-semibold"
           >
-            Connect on LinkedIn
+            Learn More
           </a>
 
           <a
-            href="https://github.com/MotionCULTRE"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border border-slate-300 px-6 py-3 rounded-lg hover:bg-slate-100 transition"
+            href="#contact"
+            className="rounded-full border border-white px-6 py-3"
           >
-            View GitHub
+            Contact Me
           </a>
         </div>
       </section>
 
-      <section className="bg-slate-50 py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-12">
-            Impact at a Glance
-          </h2>
+      {/* About */}
+      <section id="about" className="max-w-5xl mx-auto px-6 py-24">
+        <h2 className="text-4xl font-bold mb-8">About Me</h2>
 
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-4xl font-bold text-emerald-600">
-                500+
-              </h3>
-              <p className="mt-2 text-slate-600">
-                Research institutions reached through ACRN campaigns
-              </p>
-            </div>
+        <p className="text-gray-400 leading-8 text-lg">
+          I am a youth advocate, health leader and community mobilizer
+          passionate about meaningful youth participation, health equity,
+          and sustainable development.
+        </p>
 
-            <div>
-              <h3 className="text-4xl font-bold text-emerald-600">
-                5+
-              </h3>
-              <p className="mt-2 text-slate-600">
-                Years of communications and advocacy experience
-              </p>
-            </div>
+        <p className="text-gray-400 leading-8 text-lg mt-6">
+          As National Facilitator for the Young People’s Network on Health
+          and Well-being (YPNHW), I work with young people, government,
+          civil society and development partners to strengthen youth
+          leadership and improve health outcomes.
+        </p>
+      </section>
 
-            <div>
-              <h3 className="text-4xl font-bold text-emerald-600">
-                30
-              </h3>
-              <p className="mt-2 text-slate-600">
-                Global UNDP Knowledge Project Impact honorees
-              </p>
-            </div>
+      {/* Impact */}
+      <section className="max-w-5xl mx-auto px-6 py-24">
+        <h2 className="text-4xl font-bold mb-12">Impact</h2>
 
-            <div>
-              <h3 className="text-4xl font-bold text-emerald-600">
-                National
-              </h3>
-              <p className="mt-2 text-slate-600">
-                Facilitator, AfriYAN Zimbabwe
-              </p>
-            </div>
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="border border-gray-800 rounded-2xl p-8">
+            <h3 className="text-5xl font-bold">100+</h3>
+            <p className="text-gray-400 mt-4">Youth Reached</p>
+          </div>
+
+          <div className="border border-gray-800 rounded-2xl p-8">
+            <h3 className="text-5xl font-bold">20+</h3>
+            <p className="text-gray-400 mt-4">Projects Supported</p>
+          </div>
+
+          <div className="border border-gray-800 rounded-2xl p-8">
+            <h3 className="text-5xl font-bold">10+</h3>
+            <p className="text-gray-400 mt-4">Partnerships Built</p>
           </div>
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-6 py-24">
-        <h2 className="text-4xl font-bold mb-8">
-          About
-        </h2>
+      {/* Experience */}
+      <section className="max-w-5xl mx-auto px-6 py-24">
+        <h2 className="text-4xl font-bold mb-12">Experience</h2>
 
-        <p className="text-lg leading-relaxed text-slate-600 max-w-4xl">
-          I am a communications, advocacy and youth development
-          professional passionate about strengthening health systems,
-          advancing health equity and empowering young people to
-          influence policy and social change.
-        </p>
-      </section>
-
-      <section className="bg-slate-50 py-24">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-12">
-            Experience
-          </h2>
-
-          <div className="grid gap-6">
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-semibold">
-                Communications Associate
-              </h3>
-              <p className="text-emerald-600">
-                Africa Clinical Research Network (ACRN)
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-semibold">
-                Multimedia Content Developer
-              </h3>
-              <p className="text-emerald-600">
-                United Nations Office of the Special Adviser on Africa
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-semibold">
-                National Facilitator & Communications Focal Point
-              </h3>
-              <p className="text-emerald-600">
-                AfriYAN Zimbabwe / YPNHW
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="text-2xl font-semibold">
-                Digital Communications Consultant
-              </h3>
-              <p className="text-emerald-600">
-                Motion Culture Creations
-              </p>
-            </div>
+        <div className="border-l border-gray-700 pl-6">
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold">
+              National Facilitator
+            </h3>
+            <p className="text-gray-500">
+              Young People’s Network on Health & Well-being
+            </p>
           </div>
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-6 py-24">
+      {/* Contact */}
+      <section
+        id="contact"
+        className="max-w-5xl mx-auto px-6 py-24 text-center"
+      >
         <h2 className="text-4xl font-bold mb-8">
-          Let's Connect
+          Let's Work Together
         </h2>
 
-        <div className="flex flex-wrap gap-4">
-          <a
-            href="mailto:ziphozenkosindlovu01@gmail.com"
-            className="bg-slate-900 text-white px-6 py-3 rounded-lg"
-          >
-            Email Me
-          </a>
+        <p className="text-gray-400 mb-8">
+          Open to collaborations, speaking engagements,
+          partnerships and youth development initiatives.
+        </p>
 
-          <a
-            href="https://www.linkedin.com/in/ziphozenkosi-ndlovu-902ba3203/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border border-slate-300 px-6 py-3 rounded-lg"
-          >
-            LinkedIn
-          </a>
-
-          <a
-            href="https://github.com/MotionCULTRE"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border border-slate-300 px-6 py-3 rounded-lg"
-          >
-            GitHub
-          </a>
-        </div>
+        <a
+          href="mailto:ziphozenkosi.ndlovu@acrnhealth.com"
+          className="rounded-full bg-white text-black px-8 py-4 font-semibold inline-block"
+        >
+          Get In Touch
+        </a>
       </section>
     </main>
   );
