@@ -15,6 +15,10 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Ziphozenkosi Ndlovu" }],
   creator: "Ziphozenkosi Ndlovu",
+  icons: {
+    icon: [{ url: "/favicon.png", type: "image/png", sizes: "256x256" }],
+    apple: [{ url: "/favicon.png", type: "image/png", sizes: "256x256" }],
+  },
   openGraph: {
     title: "Ziphozenkosi Ndlovu | Youth Leadership & Health Advocacy",
     description:
