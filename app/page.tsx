@@ -38,27 +38,27 @@ const creativePosts = [
     type: "Coming Soon",
     description:
       "Selected campaign artwork, digital graphics, and communications visuals will be added here.",
-    image: "",
+    image: "/images/creative/campaign-visuals.png",
   },
   {
     title: "Posters/flyers",
     type: "Coming Soon",
     description:
       "Event posters, flyers, announcements, and promotional layouts are being prepared.",
-    image: "",
+    image: "/images/creative/posters-flyers.jpg",
   },
   {
     title: "Event logos/themes",
     type: "Coming Soon",
     description:
       "Event marks, theme concepts, badges, and visual identity pieces will sit in this collection.",
-    image: "",
+    image: "/images/creative/event-logos-themes.png",
   },
   {
-    title: "Photography & videography",
+    title: "Designs & concepts",
     type: "Coming Soon",
     description:
-      "Selected photo and video work from events, campaigns, and community moments will be added next.",
+      "Additional designs, layout concepts, visual systems, and creative direction samples will be added next.",
     image: "",
   },
 ];
@@ -288,7 +288,7 @@ export default function Home() {
               <p className="text-lg leading-8 text-[#5C5548]">
                 This section is reserved for selected portfolio elements across
                 campaign visuals, posters and flyers, event branding,
-                photography, and videography.
+                design concepts, and creative direction.
               </p>
               <a
                 href="#contact"
