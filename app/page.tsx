@@ -59,7 +59,7 @@ const creativePosts = [
     type: "Coming Soon",
     description:
       "Additional designs, layout concepts, visual systems, and creative direction samples will be added next.",
-    image: "",
+    image: "/images/creative/designs-concepts.jpg",
   },
 ];
 
@@ -182,7 +182,7 @@ export default function Home() {
         <div className="relative z-10 mx-auto w-full max-w-[31rem] lg:ml-auto">
           <div className="relative aspect-[4/5] overflow-hidden rounded-lg bg-[#E6DDCB] shadow-2xl shadow-[#6C5A31]/20">
             <Image
-              src="/images/profile.jpg"
+              src="/images/Profile.png"
               alt="Portrait of Ziphozenkosi Ndlovu"
               fill
               priority
