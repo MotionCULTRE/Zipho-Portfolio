@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+const recognitionUrl =
+  "https://www.undp.org/arab-states/stories/30-volunteers-drive-undps-knowledge-project-impact-2025";
+
 const roles = [
   {
     title: "President",
@@ -29,6 +32,37 @@ const focusAreas = [
   "Community mobilisation",
 ];
 
+const creativePosts = [
+  {
+    title: "Campaign visuals",
+    type: "Coming Soon",
+    description:
+      "Selected flyers, social graphics, campaign artwork, and editorial layouts will be added here.",
+    image: "",
+  },
+  {
+    title: "Identity work",
+    type: "Coming Soon",
+    description:
+      "Logo marks, typography ideas, badges, and brand system samples are being prepared.",
+    image: "",
+  },
+  {
+    title: "3D lettering",
+    type: "Coming Soon",
+    description:
+      "Dimensional type, rendered name treatments, and title experiments will sit in this collection.",
+    image: "",
+  },
+  {
+    title: "Visual direction",
+    type: "Coming Soon",
+    description:
+      "Palettes, mockups, visual systems, and creative direction pieces will be added next.",
+    image: "",
+  },
+];
+
 const metrics = [
   ["4+", "Leadership platforms"],
   ["30", "UNDP Impact 2025 honorees"],
@@ -38,13 +72,13 @@ const metrics = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-hidden bg-[#F7F2E8] text-[#12100C]">
+    <main className="min-h-screen overflow-hidden bg-[#FAF9F5] text-[#15130F]">
       <div
-        className="pointer-events-none fixed inset-0 opacity-[0.035]"
+        className="pointer-events-none fixed inset-0 opacity-[0.025]"
         style={{
           backgroundImage:
-            "radial-gradient(circle, #12100C 1px, transparent 1px)",
-          backgroundSize: "9px 9px",
+            "linear-gradient(#15130F 1px, transparent 1px), linear-gradient(90deg, #15130F 1px, transparent 1px)",
+          backgroundSize: "44px 44px",
         }}
       />
 
@@ -62,6 +96,9 @@ export default function Home() {
           <a className="transition hover:text-[#12100C]" href="#leadership">
             Leadership
           </a>
+          <a className="transition hover:text-[#12100C]" href="#creative-work">
+            Creative
+          </a>
           <a className="transition hover:text-[#12100C]" href="#focus">
             Focus
           </a>
@@ -71,7 +108,7 @@ export default function Home() {
         </nav>
         <a
           href="mailto:ziphozenkosindlovu01@gmail.com"
-          className="rounded-full border border-[#12100C]/15 px-4 py-2 text-sm font-semibold transition hover:border-[#12100C]/30 hover:bg-white/50"
+          className="rounded-full border border-[#15130F]/15 bg-white/70 px-4 py-2 text-sm font-semibold shadow-sm transition hover:border-[#15130F]/25 hover:bg-white"
         >
           Email
         </a>
@@ -81,13 +118,18 @@ export default function Home() {
         id="top"
         className="relative mx-auto grid min-h-[calc(100vh-76px)] max-w-7xl items-center gap-12 px-5 pb-20 pt-10 sm:px-8 lg:grid-cols-[1.08fr_0.92fr] lg:pb-24"
       >
-        <div className="absolute right-[-18rem] top-[-14rem] h-[38rem] w-[38rem] rounded-full border-[5rem] border-[#F3B712]/90" />
-        <div className="absolute bottom-16 left-[-11rem] hidden h-72 w-72 rounded-full border-[1.5rem] border-white/80 lg:block" />
+        <div className="absolute right-[-14rem] top-[-10rem] h-[34rem] w-[34rem] rounded-full border-[4rem] border-[#F3B712]/35" />
+        <div className="absolute bottom-16 left-[-10rem] hidden h-72 w-72 rounded-full border-[1.5rem] border-[#2F7D74]/10 lg:block" />
 
         <div className="relative z-10 max-w-3xl">
-          <p className="inline-flex rounded-full border border-[#C89600]/25 bg-[#F3B712]/15 px-4 py-2 text-sm font-semibold text-[#5F4700]">
+          <a
+            href={recognitionUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex rounded-full border border-[#C89600]/20 bg-white/80 px-4 py-2 text-sm font-semibold text-[#735600] shadow-sm transition hover:border-[#C89600]/35 hover:bg-[#FFF7D6]"
+          >
             UNDP Impact 2025 Recognition
-          </p>
+          </a>
 
           <h1 className="mt-8 max-w-4xl text-5xl font-black leading-[0.96] tracking-tight text-[#12100C] sm:text-7xl lg:text-8xl">
             Ziphozenkosi <span className="font-light">Ndlovu</span>
@@ -108,13 +150,19 @@ export default function Home() {
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a
               href="#leadership"
-              className="inline-flex items-center justify-center rounded-full bg-[#F3B712] px-6 py-3 font-bold text-black shadow-[0_14px_32px_rgba(194,137,0,0.22)] transition hover:bg-[#DFA600]"
+              className="inline-flex items-center justify-center rounded-full bg-[#F3B712] px-6 py-3 font-bold text-black shadow-[0_14px_30px_rgba(194,137,0,0.16)] transition hover:bg-[#DFA600]"
             >
               Explore Work
             </a>
             <a
+              href="#creative-work"
+              className="inline-flex items-center justify-center rounded-full bg-[#2F7D74] px-6 py-3 font-bold text-white shadow-[0_14px_30px_rgba(47,125,116,0.16)] transition hover:bg-[#24645D]"
+            >
+              View Creative Portfolio
+            </a>
+            <a
               href="#contact"
-              className="inline-flex items-center justify-center rounded-full border border-[#12100C]/20 px-6 py-3 font-bold transition hover:bg-white/55"
+              className="inline-flex items-center justify-center rounded-full border border-[#15130F]/15 bg-white/65 px-6 py-3 font-bold transition hover:bg-white"
             >
               Start a Conversation
             </a>
@@ -133,7 +181,7 @@ export default function Home() {
             />
           </div>
           <div className="absolute -bottom-6 left-5 right-5 rounded-lg border border-black/10 bg-white/85 p-4 shadow-xl backdrop-blur">
-            <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#8A6500]">
+            <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#7B620E]">
               Current work
             </p>
             <p className="mt-2 text-lg font-semibold">
@@ -143,12 +191,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative z-10 border-y border-[#12100C]/10 bg-[#12100C] text-white">
+      <section className="relative z-10 border-y border-[#15130F]/10 bg-white/70 backdrop-blur">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px px-5 py-px sm:px-8 lg:grid-cols-4">
           {metrics.map(([value, label]) => (
-            <div key={label} className="bg-[#12100C] py-8 text-center">
-              <p className="text-3xl font-black text-[#F3B712]">{value}</p>
-              <p className="mt-2 text-sm font-medium text-white/70">{label}</p>
+            <div key={label} className="py-8 text-center">
+              <p className="text-3xl font-black text-[#2F7D74]">{value}</p>
+              <p className="mt-2 text-sm font-medium text-[#5C5548]">{label}</p>
             </div>
           ))}
         </div>
@@ -183,7 +231,7 @@ export default function Home() {
 
       <section
         id="leadership"
-        className="relative z-10 bg-[#EEE4D3] px-5 py-24 sm:px-8 lg:py-32"
+        className="relative z-10 bg-[#F1F6F2] px-5 py-24 sm:px-8 lg:py-32"
       >
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
@@ -199,13 +247,96 @@ export default function Home() {
             {roles.map((role) => (
               <article
                 key={role.organization}
-                className="rounded-lg border border-[#12100C]/10 bg-[#FBF8F1] p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+                className="rounded-lg border border-[#15130F]/10 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
               >
                 <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#9A7200]">
                   {role.title}
                 </p>
                 <h3 className="mt-4 text-2xl font-black">{role.organization}</h3>
                 <p className="mt-5 leading-7 text-[#5C5548]">{role.detail}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="creative-work"
+        className="relative z-10 bg-[#FDFBF4] px-5 py-24 sm:px-8 lg:py-32"
+      >
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
+            <div className="max-w-3xl">
+              <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#9A7200]">
+                Creative Portfolio
+              </p>
+              <h2 className="mt-4 text-4xl font-black tracking-tight text-[#15130F] sm:text-5xl">
+                A focused home for upcoming design and visual direction pieces.
+              </h2>
+            </div>
+            <div className="max-w-3xl lg:ml-auto">
+              <p className="text-lg leading-8 text-[#5C5548]">
+                This section is reserved for selected portfolio elements across
+                brand identity, campaign graphics, digital artwork, and
+                experimental type.
+              </p>
+              <a
+                href="#contact"
+                className="mt-8 inline-flex items-center justify-center rounded-full bg-[#2F7D74] px-6 py-3 font-bold text-white shadow-[0_14px_30px_rgba(47,125,116,0.16)] transition hover:bg-[#24645D]"
+              >
+                Request Creative Portfolio
+              </a>
+            </div>
+          </div>
+
+          <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+            {creativePosts.map((post, index) => (
+              <article
+                key={post.title}
+                className="group overflow-hidden rounded-lg border border-[#15130F]/10 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+              >
+                <div className="relative aspect-[4/5] bg-[#EAF2EE]">
+                  {post.image ? (
+                    <Image
+                      src={post.image}
+                      alt={`${post.title} portfolio piece`}
+                      fill
+                      sizes="(min-width: 1280px) 18rem, (min-width: 768px) 45vw, 90vw"
+                      className="object-cover transition duration-500 group-hover:scale-105"
+                    />
+                  ) : (
+                    <div className="flex h-full flex-col justify-between p-5">
+                      <div className="flex items-center justify-between">
+                        <span className="rounded-full bg-[#FFF3BF] px-3 py-1 text-xs font-black uppercase tracking-[0.14em] text-[#725500]">
+                          {post.type}
+                        </span>
+                        <span className="text-sm font-black text-[#2F7D74]/45">
+                          {String(index + 1).padStart(2, "0")}
+                        </span>
+                      </div>
+                      <div>
+                        <p className="text-5xl font-black leading-none text-[#2F7D74]/20 sm:text-6xl">
+                          {post.title
+                            .split(" ")
+                            .map((word) => word[0])
+                            .join("")}
+                        </p>
+                        <div className="mt-5 h-2 w-20 rounded-full bg-[#F3B712]" />
+                      </div>
+                    </div>
+                  )}
+                </div>
+                <div className="p-6">
+                  <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#9A7200]">
+                    {post.type}
+                  </p>
+                  <h3 className="mt-3 text-2xl font-black text-[#15130F]">
+                    {post.title}
+                  </h3>
+                  <p className="mt-4 leading-7 text-[#5C5548]">
+                    {post.description}
+                  </p>
+                </div>
               </article>
             ))}
           </div>
@@ -234,7 +365,7 @@ export default function Home() {
           {focusAreas.map((item) => (
             <div
               key={item}
-              className="rounded-lg border border-[#12100C]/10 bg-white/60 px-5 py-4 text-base font-semibold shadow-sm backdrop-blur"
+              className="rounded-lg border border-[#15130F]/10 bg-white px-5 py-4 text-base font-semibold shadow-sm"
             >
               {item}
             </div>
@@ -243,8 +374,8 @@ export default function Home() {
       </section>
 
       <section className="relative z-10 mx-auto max-w-7xl px-5 pb-24 sm:px-8 lg:pb-32">
-        <div className="grid overflow-hidden rounded-lg bg-[#12100C] text-white lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="bg-[#F3B712] p-8 text-[#12100C] sm:p-10 lg:p-12">
+        <div className="grid overflow-hidden rounded-lg border border-[#15130F]/10 bg-white shadow-sm lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="bg-[#FFF1B8] p-8 text-[#15130F] sm:p-10 lg:p-12">
             <p className="text-sm font-bold uppercase tracking-[0.2em]">
               Recognition
             </p>
@@ -253,11 +384,19 @@ export default function Home() {
             </h2>
           </div>
           <div className="p-8 sm:p-10 lg:p-12">
-            <p className="text-xl leading-9 text-white/78">
+            <p className="text-xl leading-9 text-[#5C5548]">
               Recognised as one of 30 global volunteers for exceptional
               contributions to development communications through the United
               Nations Volunteers programme.
             </p>
+            <a
+              href={recognitionUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-8 inline-flex items-center justify-center rounded-full bg-[#2F7D74] px-6 py-3 font-bold text-white transition hover:bg-[#24645D]"
+            >
+              View Recognition
+            </a>
           </div>
         </div>
       </section>
@@ -276,12 +415,30 @@ export default function Home() {
           Open to collaborations, partnerships, speaking engagements, advocacy
           initiatives, and strategic communications projects.
         </p>
-        <a
-          href="mailto:ziphozenkosindlovu01@gmail.com"
-          className="mt-9 inline-flex items-center justify-center rounded-full bg-[#F3B712] px-8 py-4 font-bold text-black shadow-[0_14px_32px_rgba(194,137,0,0.22)] transition hover:bg-[#DFA600]"
-        >
-          Get in Touch
-        </a>
+        <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a
+            href="mailto:ziphozenkosindlovu01@gmail.com"
+            className="inline-flex items-center justify-center rounded-full bg-[#F3B712] px-8 py-4 font-bold text-black shadow-[0_14px_30px_rgba(194,137,0,0.16)] transition hover:bg-[#DFA600]"
+          >
+            Email Me
+          </a>
+          <a
+            href="https://wa.me/263776251043"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center rounded-full bg-[#2F7D74] px-8 py-4 font-bold text-white shadow-[0_14px_30px_rgba(47,125,116,0.16)] transition hover:bg-[#24645D]"
+          >
+            WhatsApp
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ziphozenkosi-ndlovu-902ba3203/"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center rounded-full border border-[#15130F]/15 bg-white px-8 py-4 font-bold transition hover:border-[#15130F]/30"
+          >
+            LinkedIn
+          </a>
+        </div>
       </section>
     </main>
   );
