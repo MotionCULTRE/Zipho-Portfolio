@@ -83,8 +83,18 @@ export default function Home() {
       />
 
       <header className="relative z-20 mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
-        <a href="#top" className="text-sm font-bold uppercase tracking-[0.22em]">
-          ZN
+        <a
+          href="#top"
+          aria-label="Ziphozenkosi Ndlovu home"
+          className="relative h-11 w-11 overflow-hidden rounded-full border border-[#15130F]/10 bg-white shadow-sm"
+        >
+          <Image
+            src="/favicon.png"
+            alt=""
+            fill
+            sizes="44px"
+            className="object-cover"
+          />
         </a>
         <nav
           aria-label="Primary navigation"
