@@ -37,28 +37,28 @@ const creativePosts = [
     title: "Campaign visuals",
     type: "Coming Soon",
     description:
-      "Selected flyers, social graphics, campaign artwork, and editorial layouts will be added here.",
+      "Selected campaign artwork, digital graphics, and communications visuals will be added here.",
     image: "",
   },
   {
-    title: "Identity work",
+    title: "Posters/flyers",
     type: "Coming Soon",
     description:
-      "Logo marks, typography ideas, badges, and brand system samples are being prepared.",
+      "Event posters, flyers, announcements, and promotional layouts are being prepared.",
     image: "",
   },
   {
-    title: "3D lettering",
+    title: "Event logos/themes",
     type: "Coming Soon",
     description:
-      "Dimensional type, rendered name treatments, and title experiments will sit in this collection.",
+      "Event marks, theme concepts, badges, and visual identity pieces will sit in this collection.",
     image: "",
   },
   {
-    title: "Visual direction",
+    title: "Photography & videography",
     type: "Coming Soon",
     description:
-      "Palettes, mockups, visual systems, and creative direction pieces will be added next.",
+      "Selected photo and video work from events, campaigns, and community moments will be added next.",
     image: "",
   },
 ];
@@ -277,8 +277,8 @@ export default function Home() {
             <div className="max-w-3xl lg:ml-auto">
               <p className="text-lg leading-8 text-[#5C5548]">
                 This section is reserved for selected portfolio elements across
-                brand identity, campaign graphics, digital artwork, and
-                experimental type.
+                campaign visuals, posters and flyers, event branding,
+                photography, and videography.
               </p>
               <a
                 href="#contact"
