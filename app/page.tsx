@@ -86,14 +86,14 @@ export default function Home() {
         <a
           href="#top"
           aria-label="Ziphozenkosi Ndlovu home"
-          className="relative h-11 w-11 overflow-hidden rounded-full border border-[#15130F]/10 bg-white shadow-sm"
+          className="relative h-12 w-12"
         >
           <Image
             src="/favicon.png"
             alt=""
             fill
-            sizes="44px"
-            className="object-cover"
+            sizes="48px"
+            className="object-contain"
           />
         </a>
         <nav
