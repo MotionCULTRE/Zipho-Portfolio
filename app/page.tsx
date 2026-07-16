@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CreativePortfolio from "./components/CreativePortfolio";
 
 const recognitionUrl =
   "https://www.undp.org/arab-states/stories/30-volunteers-drive-undps-knowledge-project-impact-2025";
@@ -299,57 +300,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-            {creativePosts.map((post, index) => (
-              <article
-                key={post.title}
-                className="group overflow-hidden rounded-lg border border-[#15130F]/10 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
-              >
-                <div className="relative aspect-[4/5] bg-[#EAF2EE]">
-                  {post.image ? (
-                    <Image
-                      src={post.image}
-                      alt={`${post.title} portfolio piece`}
-                      fill
-                      sizes="(min-width: 1280px) 18rem, (min-width: 768px) 45vw, 90vw"
-                      className="object-cover transition duration-500 group-hover:scale-105"
-                    />
-                  ) : (
-                    <div className="flex h-full flex-col justify-between p-5">
-                      <div className="flex items-center justify-between">
-                        <span className="rounded-full bg-[#FFF3BF] px-3 py-1 text-xs font-black uppercase tracking-[0.14em] text-[#725500]">
-                          {post.type}
-                        </span>
-                        <span className="text-sm font-black text-[#2F7D74]/45">
-                          {String(index + 1).padStart(2, "0")}
-                        </span>
-                      </div>
-                      <div>
-                        <p className="text-5xl font-black leading-none text-[#2F7D74]/20 sm:text-6xl">
-                          {post.title
-                            .split(" ")
-                            .map((word) => word[0])
-                            .join("")}
-                        </p>
-                        <div className="mt-5 h-2 w-20 rounded-full bg-[#F3B712]" />
-                      </div>
-                    </div>
-                  )}
-                </div>
-                <div className="p-6">
-                  <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#9A7200]">
-                    {post.type}
-                  </p>
-                  <h3 className="mt-3 text-2xl font-black text-[#15130F]">
-                    {post.title}
-                  </h3>
-                  <p className="mt-4 leading-7 text-[#5C5548]">
-                    {post.description}
-                  </p>
-                </div>
-              </article>
-            ))}
-          </div>
+          <CreativePortfolio posts={creativePosts} />
         </div>
       </section>
 
